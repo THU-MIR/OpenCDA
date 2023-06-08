@@ -14,6 +14,10 @@ vehicle_base:
         num: 0 # how many cameras are mounted on the vehicle. Maximum 3(frontal, left and right cameras)
         # relative positions (x,y,z,yaw) of the camera. len(positions) should be equal to camera num
         positions: []
+    localization:
+      activate: true # when not activated, ego position will be retrieved from server directly
+      debug_helper:
+        show_animation: false # whether to show real-time trajectory plotting
   behavior:
     max_speed: 50 # maximum speed, km/h
     tailgate_speed: 60 # when a vehicles needs to be close to another vehicle asap

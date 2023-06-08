@@ -17,6 +17,7 @@ vehicle_base:
         visualize: false
 
     localization: &base_localize
+      activate: true
       gnss: # gnss sensor configuration
         heading_direction_stddev: 0.1 # degree
         speed_stddev: 0.2
